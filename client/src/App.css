@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.navbtns{
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color:rgb(67, 54, 255)
+}
