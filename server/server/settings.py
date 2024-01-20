@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'server.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_prod',
+        'NAME': 'product_db',
         'USER':'root',
         'PASSWORD':'',
         'HOST':'127.0.0.1',
-        'PORT':'4306',
+        'PORT':'3306',
     }
 }
 
