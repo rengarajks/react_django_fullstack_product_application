@@ -22,25 +22,26 @@ function ShowProducts() {
   },[])
 
   return (
-    <>
-    <h1>Show all products</h1>
-    {
+    <div className='product-card-info'>
+      {
       products.map((product,index)=>(
         
-          <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={product.image} />
-      <Card.Body>
-        <Card.Title>{product.name}</Card.Title>
-        <Card.Text>
-         {product.desc}
-        </Card.Text>
-        <Button variant="primary">Check</Button>
-      </Card.Body>
-    </Card>
+          <Card className='m-2 rounded shadow-lg card-info' style={{ width: '18rem' }}>
+             <Card.Img variant="top" src={product.image} />
+              <Card.Body>
+                <Card.Title>{product.name}</Card.Title>
+                 <Card.Text>{product.desc}</Card.Text>
+                  <Button variant="primary">Check</Button>
+              </Card.Body>
+          </Card>
+
+      
+        
+          
           
       ))
     }
-    </>
+    </div>
     
 
   )
