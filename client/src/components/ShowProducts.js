@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 function ShowProducts() {
 
@@ -31,7 +32,7 @@ function ShowProducts() {
               <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
                  <Card.Text>{product.desc}</Card.Text>
-                  <Button variant="primary">Check</Button>
+                 <Link className='btn btn-primary' to={`/${product.id}/`}>Detail</Link>
               </Card.Body>
           </Card>
 
